@@ -28,9 +28,11 @@ namespace Commander
         public void ConfigureServices(IServiceCollection services)
         {
             //conexion con la configuracion hacia sql server
-            services.AddDbContext<CommandContext>(opt => opt.UseSqlServer(
+            services.AddDbContext<CommandContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("CommanderConnection")));
+            
             services.AddControllers();
+            
             services.AddScoped<ICommandRepo,ModelCommandRepo>();
         }
 
