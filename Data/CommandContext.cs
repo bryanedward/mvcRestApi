@@ -5,6 +5,7 @@ namespace Commander.Data
 {
     public class CommandContext : DbContext
     {
+        
         public CommandContext(DbContextOptions<CommandContext> options) : base(options)
         {
         }
