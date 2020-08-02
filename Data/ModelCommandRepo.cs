@@ -20,8 +20,28 @@ namespace Commander.Data
             return  new Command
             {
                 Id = 0, HowTo = "boil to egg", Line = "Boil water", Platform = "mafer & edward",
-                
             };
         }
+
+        public void CreateCommands(Command command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void UpdateCommands(Command command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void DeleteCommands(Command command)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool Save_Changes()
+        {
+            throw new System.NotImplementedException();
+        }
+        
     }
 }
